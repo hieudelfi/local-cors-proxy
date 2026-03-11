@@ -1,0 +1,28 @@
+{
+  "_comment": "Edit this file to change proxy settings. Restart the server after changes.",
+  "port": 8080,
+  "host": "localhost",
+
+  "_comment_ssl": "Paths to SSL cert and key. Relative paths resolve from the cors-proxy folder. Default points to the project root certs.",
+  "ssl": {
+    "cert": "../cert.pem",
+    "key":  "../key.pem"
+  },
+
+  "_comment_originWhitelist": "List of allowed request origins. Empty array [] allows all origins.",
+  "originWhitelist": [
+    "https://localhost:9000"
+  ],
+
+  "_comment_requireHeader": "Headers that must be present in every request. Set to [] to disable.",
+  "requireHeader": [],
+
+  "_comment_removeHeaders": "Response headers to strip before forwarding back to the browser.",
+  "removeHeaders": [
+    "x-frame-options",
+    "content-security-policy"
+  ],
+
+  "_comment_proxyUrl": "After starting the proxy, set this URL in src/js/configs/configs.json > api.proxy",
+  "proxyUrl": "https://localhost:8080/"
+}

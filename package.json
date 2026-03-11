@@ -1,0 +1,9 @@
+{
+  "name": "breece-cors-proxy",
+  "version": "1.0.0",
+  "description": "Local CORS proxy for Breece Designer — drop-in replacement for cors-anywhere.herokuapp.com",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
