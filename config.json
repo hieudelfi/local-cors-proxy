@@ -5,8 +5,8 @@
 
   "_comment_ssl": "Paths to SSL cert and key. Relative paths resolve from the cors-proxy folder. Default points to the project root certs.",
   "ssl": {
-    "cert": "../cert.pem",
-    "key":  "../key.pem"
+    "cert": "./cert.pem",
+    "key":  "./key.pem"
   },
 
   "_comment_originWhitelist": "List of allowed request origins. Empty array [] allows all origins.",

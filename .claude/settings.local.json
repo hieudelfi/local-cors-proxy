@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(winget install:*)",
+      "Read(//d/Projects/**)",
+      "Bash(/c/Users/HughNguyen/AppData/Local/Microsoft/WinGet/Links/mkcert.exe -install)",
+      "Bash(MKCERT=\"/c/Users/HughNguyen/AppData/Local/Microsoft/WinGet/Packages/FiloSottile.mkcert_Microsoft.Winget.Source_8wekyb3d8bbwe/mkcert.exe\")",
+      "Bash(\"$MKCERT\" -install)",
+      "Bash(\"$MKCERT\" -cert-file cert.pem -key-file key.pem localhost)",
+      "Bash(netstat -ano)",
+      "Read(//d/Projects/local-cors-proxy/**)",
+      "Bash(xargs -I{} taskkill //PID {} //F)"
+    ]
+  }
+}
