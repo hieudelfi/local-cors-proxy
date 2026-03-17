@@ -48,7 +48,7 @@ Run `start.bat`
 node server.js
 ```
 
-The proxy will be available at `https://localhost:8080/`.
+The proxy will be available at `https://localhost:9098/`.
 
 ---
 
@@ -57,7 +57,7 @@ The proxy will be available at `https://localhost:8080/`.
 In the Breece Designer project, open `src/js/configs/configs.json` and set:
 
 ```json
-"proxy": "https://localhost:8080/"
+"proxy": "https://localhost:9098/"
 ```
 
 ---
@@ -84,10 +84,10 @@ Edit `config.json` to change settings, then restart the server.
 
 | Key | Default | Description |
 |-----|---------|-------------|
-| `port` | `8080` | Port the proxy listens on |
+| `port` | `9098` | Port the proxy listens on |
 | `host` | `localhost` | Host/interface to bind |
-| `ssl.cert` | `../cert.pem` | Path to SSL certificate |
-| `ssl.key` | `../key.pem` | Path to SSL private key |
+| `ssl.cert` | `./cert.pem` | Path to SSL certificate |
+| `ssl.key` | `./key.pem` | Path to SSL private key |
 | `originWhitelist` | `["https://localhost:9000"]` | Allowed request origins. Set to `[]` to allow all. |
 | `removeHeaders` | `["x-frame-options", ...]` | Response headers to strip before forwarding |
 
@@ -98,5 +98,5 @@ Edit `config.json` to change settings, then restart the server.
 Prefix any target URL with the proxy address:
 
 ```
-https://localhost:8080/https://cloudapi.breecesystem.com/api/endpoint
+https://localhost:9098/https://cloudapi.breecesystem.com/api/endpoint
 ```

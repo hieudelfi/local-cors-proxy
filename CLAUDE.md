@@ -27,7 +27,7 @@ mkcert -cert-file cert.pem -key-file key.pem localhost
 All logic lives in [server.js](server.js). It is a plain Node.js HTTPS server (no Express) using only built-in modules (`http`, `https`, `fs`, `path`).
 
 **Request flow:**
-1. Client sends `GET https://localhost:8080/https://target.example.com/api/path`
+1. Client sends `GET https://localhost:9098/https://target.example.com/api/path`
 2. Server strips the leading `/` to get the target URL
 3. Validates the URL and checks `originWhitelist` from `config.json`
 4. Strips `host`, `origin`, `referer` from forwarded headers; sets correct `host`
@@ -49,5 +49,5 @@ All logic lives in [server.js](server.js). It is a plain Node.js HTTPS server (n
 
 After starting, set in the Breece Designer project (`src/js/configs/configs.json`):
 ```json
-"proxy": "https://localhost:8080/"
+"proxy": "https://localhost:9098/"
 ```

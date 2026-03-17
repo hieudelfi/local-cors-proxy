@@ -1,6 +1,6 @@
 {
   "_comment": "Edit this file to change proxy settings. Restart the server after changes.",
-  "port": 8080,
+  "port": 9098,
   "host": "localhost",
 
   "_comment_ssl": "Paths to SSL cert and key. Relative paths resolve from the cors-proxy folder. Default points to the project root certs.",
@@ -24,5 +24,5 @@
   ],
 
   "_comment_proxyUrl": "After starting the proxy, set this URL in src/js/configs/configs.json > api.proxy",
-  "proxyUrl": "https://localhost:8080/"
+  "proxyUrl": "https://localhost:9098/"
 }
