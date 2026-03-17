@@ -10,7 +10,9 @@
       "Bash(\"$MKCERT\" -cert-file cert.pem -key-file key.pem localhost)",
       "Bash(netstat -ano)",
       "Read(//d/Projects/local-cors-proxy/**)",
-      "Bash(xargs -I{} taskkill //PID {} //F)"
+      "Bash(xargs -I{} taskkill //PID {} //F)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ]
   }
 }
