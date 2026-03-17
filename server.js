@@ -7,10 +7,10 @@
  * Config: edit config.json, then restart.
  *
  * After starting, set in src/js/configs/configs.json:
- *   "proxy": "https://localhost:8080/"
+ *   "proxy": "https://localhost:9098/"
  *
  * Request format (same as cors-anywhere):
- *   GET https://localhost:8080/https://cloudapi.breecesystem.com/api/endpoint
+ *   GET https://localhost:9098/https://cloudapi.breecesystem.com/api/endpoint
  */
 
 'use strict';
@@ -21,7 +21,7 @@ const fs     = require('fs');
 const path   = require('path');
 const config = require('./config.json');
 
-const PORT             = parseInt(process.env.PORT || config.port  || 8080);
+const PORT             = parseInt(process.env.PORT || config.port  || 9098);
 const HOST             = process.env.HOST           || config.host || 'localhost';
 const ORIGIN_WHITELIST = config.originWhitelist    || [];
 const REMOVE_HEADERS   = (config.removeHeaders     || []).map(h => h.toLowerCase());
