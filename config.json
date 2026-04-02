@@ -10,9 +10,7 @@
   },
 
   "_comment_originWhitelist": "List of allowed request origins. Empty array [] allows all origins.",
-  "originWhitelist": [
-    "https://localhost:9000"
-  ],
+  "originWhitelist": [],
 
   "_comment_requireHeader": "Headers that must be present in every request. Set to [] to disable.",
   "requireHeader": [],
